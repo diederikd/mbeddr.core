@@ -27,10 +27,6 @@
     <import index="uu1k" ref="r:5d05a0a1-0178-4953-8047-22b44c66dcde(com.mbeddr.mpsutil.inca.data.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -82,9 +78,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -242,7 +235,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -4074,46 +4066,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2EF$xgkKpEX" role="3clF47">
-        <node concept="3clFbF" id="2EF$xgkM6b1" role="3cqZAp">
-          <node concept="2OqwBi" id="2EF$xgkM6aY" role="3clFbG">
-            <node concept="10M0yZ" id="2EF$xgkM6aZ" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="2EF$xgkM6b0" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="2EF$xgkM8Wk" role="37wK5m">
-                <node concept="2OqwBi" id="2EF$xgkMawX" role="3uHU7w">
-                  <node concept="2OqwBi" id="2EF$xgkM9LU" role="2Oq$k0">
-                    <node concept="37vLTw" id="2EF$xgkM9sl" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2EF$xgkKqzx" resolve="linkAccess" />
-                    </node>
-                    <node concept="2qgKlT" id="2EF$xgkMagt" role="2OqNvi">
-                      <ref role="37wK5l" to="tpeu:hEwJdGu" resolve="getLeftExpression" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="2EF$xgkMaSI" role="2OqNvi">
-                    <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-                  </node>
-                </node>
-                <node concept="3cpWs3" id="2EF$xgkM819" role="3uHU7B">
-                  <node concept="2OqwBi" id="2EF$xgkM6TI" role="3uHU7B">
-                    <node concept="37vLTw" id="2EF$xgkM6mT" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2EF$xgkKqzx" resolve="linkAccess" />
-                    </node>
-                    <node concept="2qgKlT" id="2EF$xgkM7g6" role="2OqNvi">
-                      <ref role="37wK5l" to="tpek:hEwIP$B" resolve="getVariableExpectedName" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="2EF$xgkM8b$" role="3uHU7w">
-                    <property role="Xl_RC" value="  " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2EF$xgkMbbK" role="3cqZAp" />
         <node concept="3clFbF" id="2EF$xgkKq1X" role="3cqZAp">
           <node concept="1rXfSq" id="2EF$xgkKGfP" role="3clFbG">
             <ref role="37wK5l" node="2EF$xgkKFha" resolve="isTaintedByInput" />
@@ -4139,46 +4091,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2EF$xgkKxXb" role="3clF47">
-        <node concept="3clFbF" id="2EF$xgkMb$N" role="3cqZAp">
-          <node concept="2OqwBi" id="2EF$xgkMb$O" role="3clFbG">
-            <node concept="10M0yZ" id="2EF$xgkMb$P" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="2EF$xgkMb$Q" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="2EF$xgkMb$R" role="37wK5m">
-                <node concept="2OqwBi" id="2EF$xgkMb$S" role="3uHU7w">
-                  <node concept="2OqwBi" id="2EF$xgkMb$T" role="2Oq$k0">
-                    <node concept="37vLTw" id="2EF$xgkMc$u" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2EF$xgkKxXj" resolve="propAccess" />
-                    </node>
-                    <node concept="2qgKlT" id="2EF$xgkMb$V" role="2OqNvi">
-                      <ref role="37wK5l" to="tpeu:hEwJdGu" resolve="getLeftExpression" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="2EF$xgkMb$W" role="2OqNvi">
-                    <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-                  </node>
-                </node>
-                <node concept="3cpWs3" id="2EF$xgkMb$X" role="3uHU7B">
-                  <node concept="2OqwBi" id="2EF$xgkMb$Y" role="3uHU7B">
-                    <node concept="37vLTw" id="2EF$xgkMc9M" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2EF$xgkKxXj" resolve="propAccess" />
-                    </node>
-                    <node concept="2qgKlT" id="2EF$xgkMb_0" role="2OqNvi">
-                      <ref role="37wK5l" to="tpek:hEwIP$B" resolve="getVariableExpectedName" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="2EF$xgkMb_1" role="3uHU7w">
-                    <property role="Xl_RC" value="  " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2EF$xgkMby0" role="3cqZAp" />
         <node concept="3clFbF" id="2EF$xgkKHfp" role="3cqZAp">
           <node concept="1rXfSq" id="2EF$xgkKHfm" role="3clFbG">
             <ref role="37wK5l" node="2EF$xgkKFha" resolve="isTaintedByInput" />
@@ -4218,33 +4130,6 @@
         </node>
         <node concept="2$JKZl" id="2EF$xgkKWcF" role="3cqZAp">
           <node concept="3clFbS" id="2EF$xgkKWcH" role="2LFqv$">
-            <node concept="3clFbF" id="2EF$xgkP8QS" role="3cqZAp">
-              <node concept="2OqwBi" id="2EF$xgkP8QP" role="3clFbG">
-                <node concept="10M0yZ" id="2EF$xgkP8QQ" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="2EF$xgkP8QR" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="2EF$xgkP9Cx" role="37wK5m">
-                    <node concept="2OqwBi" id="2EF$xgkPaHl" role="3uHU7w">
-                      <node concept="2OqwBi" id="2EF$xgkP9ZY" role="2Oq$k0">
-                        <node concept="37vLTw" id="2EF$xgkP9LP" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2EF$xgkKV_P" resolve="parentOfAccess" />
-                        </node>
-                        <node concept="2yIwOk" id="2EF$xgkPacw" role="2OqNvi" />
-                      </node>
-                      <node concept="liA8E" id="2EF$xgkPbhk" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="2EF$xgkP8Vs" role="3uHU7B">
-                      <property role="Xl_RC" value="Concept of parent access " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="2EF$xgkKXi5" role="3cqZAp">
               <node concept="37vLTI" id="2EF$xgkKXrv" role="3clFbG">
                 <node concept="2OqwBi" id="2EF$xgkKXIP" role="37vLTx">
@@ -4275,33 +4160,6 @@
                   <node concept="chp4Y" id="2EF$xgkKX4P" role="cj9EA">
                     <ref role="cht4Q" to="tpee:fzclF8l" resolve="Statement" />
                   </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2EF$xgkQRV$" role="3cqZAp">
-          <node concept="2OqwBi" id="2EF$xgkQRV_" role="3clFbG">
-            <node concept="10M0yZ" id="2EF$xgkQRVA" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="2EF$xgkQRVB" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="2EF$xgkQRVC" role="37wK5m">
-                <node concept="2OqwBi" id="2EF$xgkQRVD" role="3uHU7w">
-                  <node concept="2OqwBi" id="2EF$xgkQRVE" role="2Oq$k0">
-                    <node concept="37vLTw" id="2EF$xgkQRVF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2EF$xgkKV_P" resolve="parentOfAccess" />
-                    </node>
-                    <node concept="2yIwOk" id="2EF$xgkQRVG" role="2OqNvi" />
-                  </node>
-                  <node concept="liA8E" id="2EF$xgkQRVH" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="2EF$xgkQRVI" role="3uHU7B">
-                  <property role="Xl_RC" value="Concept of parent access " />
                 </node>
               </node>
             </node>
